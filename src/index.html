@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anais Et Gianluca wedding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        backgroundSize: {
+          'auto': 'auto',
+          'cover': 'cover',
+          'contain': 'contain',
+          '50%': '150%',
+          '16': '4rem',
+        },
+        extend: {
+          colors: {
+            'custom-green': '#5c6244',
+            'custom-brown': '#817065'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .great-vibes-regular {
+      font-family: "Great Vibes", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .great-vibes-light {
+      font-family: "Great Vibes", cursive;
+      font-weight: 200;
+      font-style: bold;
+    }
+
+    .cormorant-garamond-regular {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .cormorant-garamond-bold {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 800;
+      font-style: bold;
+    }
+  </style>
+</head>
+
+<body class="bg-[#fff9f2] text-custom-brown relative min-h-screen before:content-[''] before:top-0 before:left-0 before:size-full before:blur-md before:fixed before:-z-2 before:bg-[url('/assets/canva_ai_5.webp')] 
+  before:bg-cover  before:bg-center before:bg-fixed before:opacity-75 pointer-events-none before:-z-10">
+  <nav class="h-[5dvh] ">
+    <div class="flex flex-row-reverse ">
+      <button class="inline-block text-3xl p-2 cursor-pointer pointer-events-auto select-none" id="switch-language-it">
+        <span class="hidden sm:inline-block cormorant-garamond-regular">Italiano</span> 🇮🇹
+      </button>
+      <button class="inline-block text-3xl p-2 cursor-pointer select-none pointer-events-auto" id="switch-language-fr">
+        <span class="hidden sm:inline-block cormorant-garamond-regular">Français</span> 🇫🇷
+      </button>
+    </div>
+  </nav>
+  <main class="relative">
+    <button id="scrollButton" class="fixed bottom-5 right-5 w-10 h-10 bg-black bg-opacity-50 rounded-full flex justify-center items-center text-white text-2xl no-underline 
+      hover:scale-110 focus:outline-none
+      transition-opacity ease-in-out delay-150 duration-300
+      animate-bounce pointer-events-auto">
+      ↓
+    </button>
+    <header class="h-[60dvh] md:h-[70dvh] flex flex-col items-center justify-center ">
+      <h1
+        class="great-vibes-light text-8xl lg:text-[10rem] pt-10 pb-12 md:pb-20 px-2 text-center flex flex-col sm:flex-row md:justify-center">
+        <span class="sm:pl-6">Anaïs</span> <span class="sm:pl-8 sm:pr-4">&</span>
+        <span class="pl-6">Gianluca</span>
+      </h1>
+      <h2 class="cormorant-garamond-regular text-4xl lg:text-6xl pt-12 pb-2 px-2 text-custom-green"
+        data-i18n="we_marry">Ci sposiamo!</h2>
+      <h3 class="cormorant-garamond-regular text-3xl text-custom-green pt-12" data-i18n="save_the_date">9 Agosto 2025
+      </h3>
+    </header>
+    <hr class="border-double border-1 border-custom-brown w-[80%] mx-auto overflow-visible text-center h-2" />
+    <div class="h-full flex flex-col justify-evenly">
+      <h2 class="great-vibes-regular text-7xl sm:text-8xl text-center py-12 px-2" data-i18n="our_wedding">Il nostro
+        matrimonio </h2>
+      <div class="relative w-full max-w-2xl mx-auto">
+        <!-- Carousel Wrapper -->
+        <div class="overflow-hidden relative">
+          <!-- Carousel Items -->
+          <div id="carousel" class="flex transition-transform duration-500">
+            <div class="min-w-full h-[32rem] flex items-center justify-center">
+              <img src="/assets/shooting1.jpg" alt="Photo 1" class="object-contain w-full h-full">
+            </div>
+            <div class="min-w-full h-[32rem] flex items-center justify-center">
+              <img src="/assets/shooting2.jpg" alt="Photo 2" class="object-contain w-full h-full">
+            </div>
+            <div class="min-w-full h-[32rem] flex items-center justify-center">
+              <img src="/assets/shooting3.jpg" alt="Photo 3" class="object-contain w-full h-full">
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button id="prev"
+          class="absolute top-1/2 left-0 transform -translate-y-1/2 text-[#5c6244] text-4xl font-bold p-4 pointer-events-auto">
+          &lt;
+        </button>
+        <button id="next"
+          class="absolute top-1/2 right-0 transform -translate-y-1/2 text-[#5c6244] text-4xl font-bold p-4 pointer-events-auto">
+          &gt;
+        </button>
+      </div>
+
+      <span class="text-xs text-center italic m-2">Credit photo Lancelot Radovic</span>
+
+      <div class="text-center py-6 px-10 text-xl sm:text-3xl flex flex-col md:items-center">
+        <p class="cormorant-garamond-regular md:max-w-[50%]" data-i18n="our_story">
+          In un 9 Agosto 2018, ci siamo incontrati per la prima volta. 7 anni dopo, abbiamo deciso di celebrare il
+          nostro
+          per sempre insieme a voi.
+        </p>
+
+        <p class="cormorant-garamond-regular md:w-[50%]" data-i18n="request_to_participate">
+          Vi chiediamo gentilmente di confermare la vostra partecipazione compilando il modulo disponibile qui sotto
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeT9BkeGYlpjHfp2mmuTqFkVBLnti_jj-nZVzGWSmywo2Sh6A/viewform?usp=sf_link"
+          target="_blank"
+          class="bg-[#5c6244] pointer-events-auto p-4 mt-10 sm:p-6 sm:mt-12 md:w-[40%] md:mt-16 text-white text-xl sm:text-3xl italic cormorant-garamond-bold"
+          data-i18n="button_rvsp">Formulario partecipazione</a>
+      </div>
+    </div>
+    <hr class="border-double border-1 border-custom-brown w-[80%] mx-auto overflow-visible text-center h-2" />
+    <div class="h-dvh flex flex-col justify-evenly items-center">
+      <h2 class="great-vibes-regular text-6xl sm:text-8xl text-center pt-12 pb-10 px-2" data-i18n="pratical_info">
+        Informazioni Pratiche</h2>
+        <!-- Count Down elements -->
+    <div class=" flex items-center md:items-start justify-center w-full gap-4 count-down-main ">
+      <div class="timer w-16">
+        <div class="">
+          <h3 class="countdown-element days great-vibes-regular font-semibold text-2xl text-custom-brown text-center">
+          </h3>
+        </div>
+        <p class="text-md cormorant-garamond-regular text-custom-green mt-1 text-center w-full">days</p>
+      </div>
+      <h3 class="great-vibes-regular font-semibold text-2xl text-custom-green">:</h3>
+      <div class="timer w-16">
+        <div class="">
+          <h3 class="countdown-element hours great-vibes-regular font-semibold text-2xl text-custom-brown text-center">
+          </h3>
+        </div>
+        <p class="text-md cormorant-garamond-regular text-custom-green mt-1 text-center w-full">hours</p>
+      </div>
+      <h3 class="great-vibes-regular font-semibold text-2xl text-custom-green">:</h3>
+      <div class="timer w-16">
+        <div class="">
+          <h3 class="countdown-element minutes great-vibes-regular font-semibold text-2xl text-custom-brown text-center">
+          </h3>
+        </div>
+        <p class="text-md cormorant-garamond-regular text-custom-green mt-1 text-center w-full">minutes</p>
+      </div>
+      <h3 class="great-vibes-regular font-semibold text-2xl text-custom-green">:</h3>
+      <div class="timer w-16">
+        <div class="">
+          <h3 class="countdown-element seconds great-vibes-regular font-semibold text-2xl text-custom-brown text-center">
+          </h3>
+        </div>
+        <p class="text-md cormorant-garamond-regular text-custom-green mt-1 text-center w-full">seconds</p>
+      </div>
+    </div>
+      <dl class="text-center px-10 text-xl sm:text-3xl md:max-w-[50%]">
+        <dt class="uppercase font-medium font-serif  pt-2" data-i18n="date_and_time">Data e Ora</dt>
+        <dd class="cormorant-garamond-regular  py-2 sm:py-4" data-i18n="date_and_time_info">9 Agosto 2025, 16:00</dd>
+
+        <dt class="uppercase font-medium font-serif  pt-8 sm:pt-16" data-i18n="location">Località</dt>
+        <dd class="cormorant-garamond-regular  py-2 sm:py-4 underline-offset-4 underline"><a
+            href="https://maps.app.goo.gl/D7yokYBs1UAJ9uGa9" target="_blank" data-i18n="location_info">Villa Malliana,
+            Almenno San Bartolomeo, BG, Italia</a></dd>
+
+        <dt class="uppercase font-medium font-serif pt-8 sm:pt-16" data-i18n="gifts_title">Lista Nozze e Regali</dt>
+        <dd class="cormorant-garamond-regular py-2 sm:py-4" data-i18n="gifts_description">La vostra presenza al nostro
+          matrimonio è il dono più grande
+          che
+          possiamo ricevere. La vostra compagnia nel nostro giorno speciale è tutto ciò di cui abbiamo bisogno.
+        </dd>
+      </dl>
+    </div>
+  </main>
+
+  <script>
+    const messages = {
+      "it": {
+        "we_marry": "Ci Sposiamo!",
+        "save_the_date": "9 Agosto 2025",
+        "our_wedding": "Il Nostro Matrimonio",
+        "our_story": "In un 9 Agosto 2018, ci siamo incontrati per la prima volta. 7 anni dopo, abbiamo deciso di celebrare il nostro per sempre insieme a voi.",
+        "request_to_participate": "Vi chiediamo gentilmente di confermare la vostra partecipazione compilando il modulo disponibile qui sotto",
+        "button_rvsp": "Formulario partecipazione",
+        "pratical_info": "Informazioni pratiche",
+        "date_and_time": "Data E Ora",
+        "date_and_time_info": "9 Agosto 2025, 16:00",
+        "location": "Località",
+        "location_info": "Villa Malliana, Almenno San Bartolomeo, BG, Italia",
+        "gifts_title": "Lista Nozze E Regali",
+        "gifts_description": "La vostra presenza al nostro matrimonio è il dono più grande che possiamo ricevere. La vostra compagnia nel nostro giorno speciale è tutto ciò di cui abbiamo bisogno."
+      },
+      "fr": {
+        "we_marry": "Nous nous marions !",
+        "save_the_date": "9 Août 2025",
+        "our_wedding": "Notre mariage",
+        "our_story": "Le 9 août 2018, nous nous sommes rencontrés. 7 ans plus tard, nous avons décidé de célébrer notre \"oui\" pour la vie avec vous.",
+        "request_to_participate": "Nous vous remercions de nous confirmer votre présence en complétant le formulaire disponible ci-dessous.",
+        "button_rvsp": "Formulaire",
+        "pratical_info": "Informations pratiques",
+        "date_and_time": "Date et heure",
+        "date_and_time_info": "9 août 2015 à partir de 16h",
+        "location": "Lieu",
+        "location_info": "Villa Malliana, Almenno San Bartolomeo, BG, Italia",
+        "gifts_title": "Liste de mariage et cadeaux",
+        "gifts_description": "Votre présence à notre mariage est le plus grand cadeau que vous pouvez nous faire. Vous avoir auprès de nous pour cette journée si spéciale est tout ce dont nous avons besoin.",
+      }
+    }
+
+    function updateContent(langData) {
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        element.textContent = langData[key];
+      });
+    }
+
+    function setLanguagePreference(lang) {
+      localStorage.setItem('language', lang);
+      // location.reload();
+    }
+
+    function changeLanguage(lang) {
+      setLanguagePreference(lang);
+      updateContent(messages[lang]);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const scrollButton = document.getElementById('scrollButton');
+      document.getElementById('switch-language-it').addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        changeLanguage('it');
+      });
+
+      document.getElementById('switch-language-fr').addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        changeLanguage('fr');
+      });
+
+      scrollButton.addEventListener('click', () => {
+        console.debug("Button clicked")
+        const currentScroll = window.pageYOffset;
+        const targetScroll = currentScroll + window.innerHeight;
+
+        smoothScroll(targetScroll, 500); // 500ms duration
+      });
+
+      window.addEventListener('scroll', function () {
+        console.debug((window.pageYOffset + window.innerHeight) - document.body.scrollHeight)
+        if ((window.pageYOffset + window.innerHeight) - document.body.scrollHeight > -20) {
+          scrollButton.style.opacity = '0%'
+        } else {
+          scrollButton.style.opacity = '100%'
+        }
+      });
+
+      function smoothScroll(targetPosition, duration) {
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+
+        function animation(currentTime) {
+          if (startTime === null) startTime = currentTime;
+          const timeElapsed = currentTime - startTime;
+          const run = ease(timeElapsed, startPosition, distance, duration);
+          window.scrollTo(0, run);
+          if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        function ease(t, b, c, d) {
+          t /= d / 2;
+          if (t < 1) return c / 2 * t * t + b;
+          t--;
+          return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+
+        requestAnimationFrame(animation);
+      }
+    });
+
+    const carousel = document.getElementById('carousel');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const offset = -currentIndex * 100;
+      carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : carousel.children.length - 1;
+      updateCarousel();
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex < carousel.children.length - 1) ? currentIndex + 1 : 0;
+      updateCarousel();
+    });
+
+    // Swipe functionality
+    let startX;
+    let endX;
+
+    carousel.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    carousel.addEventListener('touchmove', (e) => {
+      endX = e.touches[0].clientX;
+    });
+
+    carousel.addEventListener('touchend', () => {
+      if (startX > endX + 50) {
+        // Swipe left
+        currentIndex = (currentIndex < carousel.children.length - 1) ? currentIndex + 1 : 0;
+      } else if (startX < endX - 50) {
+        // Swipe right
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : carousel.children.length - 1;
+      }
+      updateCarousel();
+    });
+
+    // count-down timer
+    let dest = new Date("aug 9, 2025 16:00:00").getTime();
+    let x = setInterval(function () {
+      let now = new Date().getTime();
+      let diff = dest - now;
+
+      // Check if the countdown has reached zero or negative
+      if (diff <= 0) {
+        clearInterval(x); // Stop the countdown
+        return; // Exit the function
+      }
+
+      let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      if (days < 10) {
+        days = `0${days}`;
+      }
+      if (hours < 10) {
+        hours = `0${hours}`;
+      }
+      if (minutes < 10) {
+        minutes = `0${minutes}`;
+      }
+      if (seconds < 10) {
+        seconds = `0${seconds}`;
+      }
+
+      // Get elements by class name
+      let countdownElements = document.getElementsByClassName("countdown-element");
+
+      // Loop through the elements and update their content
+      for (let i = 0; i < countdownElements.length; i++) {
+        let className = countdownElements[i].classList[1]; // Get the second class name
+        switch (className) {
+          case "days":
+            countdownElements[i].innerHTML = days;
+            break;
+          case "hours":
+            countdownElements[i].innerHTML = hours;
+            break;
+          case "minutes":
+            countdownElements[i].innerHTML = minutes;
+            break;
+          case "seconds":
+            countdownElements[i].innerHTML = seconds;
+            break;
+          default:
+            break;
+        }
+      }
+    }, 1000);
+
+  </script>
+</body>
+
+</html>
